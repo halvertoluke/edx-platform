@@ -66,6 +66,16 @@ urlpatterns += patterns(
     url(r'^logout$', 'student.views.logout_user', name='logout'),
 )
 
+# External Link
+urlpatterns += (
+    url(
+        r'^external_blog/{}$'.format(settings.COURSE_KEY_PATTERN),
+        'external_blog.views.redirect_view',
+        name='external_blog',
+    ),
+)
+
+
 # restful api
 urlpatterns += patterns(
     'contentstore.views',

@@ -323,7 +323,10 @@ class CourseTabList(List):
         else:
             discussion_tab = CourseTab.load('discussion')
 
+        external_link =  CourseTab.load('external_link', name="External Link", link="http://www.us.es/")
+
         course.tabs.extend([
+            external_link,
             CourseTab.load('textbooks'),
             discussion_tab,
             CourseTab.load('wiki'),

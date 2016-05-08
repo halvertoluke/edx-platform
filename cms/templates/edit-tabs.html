@@ -6,6 +6,7 @@
   from django.core.urlresolvers import reverse
   from xmodule.tabs import StaticTab
   from django.template.defaultfilters import escapejs
+  from lms.djangoapps.courseware.tabs import ExternalLinkCourseTab
 %>
 <%block name="title">${_("Pages")}</%block>
 <%block name="bodyclass">is-signedin course view-static-pages</%block>
@@ -120,6 +121,15 @@
                         <div class="drag-handle is-fixed" data-tooltip="${_('This page cannot be reordered')}">
                           <span class="sr">${_("This page cannot be reordered")}</span>
                         </div>
+                      % endif
+
+                      % if isinstance(tab, ExternalLinkCourseTab):
+                        <a class="edit-button action-button actions-list" href="${reverse('external_blog', kwargs={'course_key_string': context_course.id})}">
+                          <i class="icon fa fa-pencil"></i>
+                          <span class="action-button-text">
+                            ${_("EDIT")}
+                          </span>
+                        </a>
                       % endif
                     </li>
 
