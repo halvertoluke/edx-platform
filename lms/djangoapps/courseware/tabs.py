@@ -250,6 +250,7 @@ class ExternalLinkCourseTab(LinkTab):
     priority = None
     is_default = False    # An external link tab is not added to a course by default
     allow_multiple = True
+    is_hideable = True
 
     @classmethod
     def validate(cls, tab_dict, raise_error=True):
