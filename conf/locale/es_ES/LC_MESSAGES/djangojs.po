@@ -174,7 +174,7 @@ msgstr ""
 #: cms/static/js/views/course_info_update.js
 #: cms/static/js/views/edit_textbook.js
 #: cms/static/js/views/list_item_editor.js
-#: cms/static/js/views/modals/edit_xblock.js
+#: cms/static/js/views/modals/edit_xblock.js cms/static/js/views/overview.js
 #: cms/static/js/views/overview_assignment_grader.js
 #: cms/static/js/views/utils/xblock_utils.js lms/static/js/ccx/schedule.js
 #: lms/static/js/views/fields.js
@@ -187,7 +187,6 @@ msgstr "Guardando"
 #: cms/static/js/views/course_info_update.js
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
 #: common/static/coffee/src/discussion/utils.js
-#: lms/static/js/Markdown.Editor.js
 msgid "OK"
 msgstr "De acuerdo"
 
@@ -204,7 +203,6 @@ msgstr "De acuerdo"
 #: cms/static/js/views/show_textbook.js cms/static/js/views/validation.js
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
 #: common/static/common/js/components/utils/view_utils.js
-#: lms/static/js/Markdown.Editor.js
 #: cms/templates/js/add-xblock-component-menu-problem.underscore
 #: cms/templates/js/add-xblock-component-menu.underscore
 #: cms/templates/js/certificate-editor.underscore
@@ -269,12 +267,6 @@ msgstr "Subiendo"
 msgid "Name"
 msgstr "Nombre"
 
-#: cms/static/js/views/assets.js lms/static/js/Markdown.Editor.js
-#: cms/templates/js/asset-upload-modal.underscore
-#: lms/templates/instructor/instructor_dashboard_2/certificate-bulk-white-list.underscore
-msgid "Choose File"
-msgstr ""
-
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: cms/static/js/views/manage_users_and_roles.js
@@ -310,13 +302,6 @@ msgstr "Subir archivo"
 msgid "Save"
 msgstr "Guardar"
 
-#. Translators: this is a message from the raw HTML editor displayed in the
-#. browser when a user needs to edit HTML
-#: cms/static/js/views/modals/course_outline_modals.js
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
-msgid "Advanced"
-msgstr "Avanzado"
-
 #. #-#-#-#-#  djangojs-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -345,16 +330,6 @@ msgstr "Tus cambios han sido guardados."
 #: lms/static/js/views/fields.js
 msgid "Error"
 msgstr "Error"
-
-#: common/lib/xmodule/xmodule/assets/library_content/public/js/library_content_edit.js
-#: common/lib/xmodule/xmodule/js/public/js/library_content_edit.js
-msgid "Updating with latest library content"
-msgstr "Actualizando con el último contenido de la biblioteca."
-
-#: common/lib/xmodule/xmodule/assets/split_test/public/js/split_test_author_view.js
-#: common/lib/xmodule/xmodule/js/public/js/split_test_author_view.js
-msgid "Creating missing groups"
-msgstr "Creando grupos perdidos"
 
 #: common/lib/xmodule/xmodule/js/src/annotatable/display.js
 msgid "Show Annotations"
@@ -441,32 +416,32 @@ msgstr "Preformateado"
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
+msgid "Heading 1"
+msgstr "Encabezado 1"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: common/lib/xmodule/xmodule/js/src/html/edit.js
+msgid "Heading 2"
+msgstr "Encabezado 2"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: common/lib/xmodule/xmodule/js/src/html/edit.js
 msgid "Heading 3"
 msgstr "Encabezado 3"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
-msgid "Heading 4"
-msgstr "Encabezado 4"
-
-#. Translators: this is a message from the raw HTML editor displayed in the
-#. browser when a user needs to edit HTML
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
-msgid "Heading 5"
-msgstr "Encabezado 5"
-
-#. Translators: this is a message from the raw HTML editor displayed in the
-#. browser when a user needs to edit HTML
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
-msgid "Heading 6"
-msgstr "Encabezado 6"
-
-#. Translators: this is a message from the raw HTML editor displayed in the
-#. browser when a user needs to edit HTML
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
 msgid "Add to Dictionary"
 msgstr "Añadir al diccionario"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: common/lib/xmodule/xmodule/js/src/html/edit.js
+msgid "Advanced"
+msgstr "Avanzado"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -959,14 +934,20 @@ msgstr "Encabezados"
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
-msgid "Heading 1"
-msgstr "Encabezado 1"
+msgid "Heading 4"
+msgstr "Encabezado 4"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
-msgid "Heading 2"
-msgstr "Encabezado 2"
+msgid "Heading 5"
+msgstr "Encabezado 5"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: common/lib/xmodule/xmodule/js/src/html/edit.js
+msgid "Heading 6"
+msgstr "Encabezado 6"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -1712,10 +1693,6 @@ msgstr ""
 "\n"
 "¿Deseas pasar al Editor Avanzado y convertir este ejercicio a XML?"
 
-#: common/lib/xmodule/xmodule/js/src/problem/edit.js
-msgid "Explanation"
-msgstr ""
-
 #: common/lib/xmodule/xmodule/js/src/sequence/display.js
 msgid ""
 "Sequence error! Cannot navigate to %(tab_name)s in the current "
@@ -1723,10 +1700,6 @@ msgid ""
 msgstr ""
 "¡Error de secuencia! No puedes navegar a %(tab_name)s en el SequenceModule "
 "actual. Por favor, contacta con el personal del curso."
-
-#: common/lib/xmodule/xmodule/js/src/sequence/display.js
-msgid "Bookmarked"
-msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
 #: common/lib/xmodule/xmodule/js/src/video/09_play_pause_control.js
@@ -1880,48 +1853,28 @@ msgid "Do not show again"
 msgstr "No volver a mostrar"
 
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "Transcript will be displayed when you start playing the video."
+msgid "Turn off transcript"
 msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
 msgid ""
-"Activating a link in this group will skip to the corresponding point in the "
-"video."
-msgstr ""
-
-#: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "Video transcript"
-msgstr ""
-
-#: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "Start of transcript. Skip to the end."
-msgstr ""
-
-#: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "End of transcript. Skip to the start."
-msgstr ""
-
-#: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid ""
-"Language: Press the UP arrow key to enter the language menu then use UP and "
-"DOWN arrow keys to navigate language options. Press ENTER to change to the "
+"Language: Press the UP arrow key to enter the language menu, then use UP and"
+" DOWN arrow keys to navigate language options. Press ENTER to change to the "
 "selected language."
 msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "Open language menu."
+msgid "Open language menu"
+msgstr "Añadir idioma"
+
+#: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
+msgid ""
+"Activating an item in this group will spool the video to the corresponding "
+"time point. To skip transcript, go to previous item."
 msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "Hide closed captions"
-msgstr ""
-
-#: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "(Caption will be displayed when you start playing the video.)"
-msgstr ""
-
-#: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
-msgid "Turn on closed captioning"
+msgid "Caption will be displayed when "
 msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
@@ -1931,6 +1884,14 @@ msgstr ""
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
 msgid "Turn off transcripts"
 msgstr ""
+
+#: common/lib/xmodule/xmodule/public/js/library_content_edit.js
+msgid "Updating with latest library content"
+msgstr "Actualizando con el último contenido de la biblioteca."
+
+#: common/lib/xmodule/xmodule/public/js/split_test_author_view.js
+msgid "Creating missing groups"
+msgstr "Creando grupos perdidos"
 
 #: common/static/coffee/src/discussion/discussion_module_view.js
 msgid "Hide Discussion"
@@ -2222,17 +2183,6 @@ msgstr "Por favor, no utilices espacios en este campo."
 msgid "Please do not use any spaces or special characters in this field."
 msgstr "Por favor, no uses espacios o caracteres especiales en este campo."
 
-#: common/static/common/js/components/views/paginated_view.js
-#: common/static/common/js/components/views/paging_footer.js
-msgid "Pagination"
-msgstr ""
-
-#: common/static/common/js/components/views/paginated_view.js
-msgid ""
-"Your request could not be completed. Reload the page and try again. If the "
-"issue persists, click the Help tab to report the problem."
-msgstr ""
-
 #: common/static/common/js/components/views/paging_header.js
 msgid "Showing %(first_index)s out of %(num_items)s total"
 msgstr "Mostrando %(first_index)s de  %(num_items)s"
@@ -2491,26 +2441,6 @@ msgstr[1] "Esta anotación tiene %(count)s de marcadores."
 msgid "An unexpected error occurred.  Please try again."
 msgstr "Ocurrió un error inesperado. Prueba de nuevo."
 
-#: lms/djangoapps/support/static/support/js/views/enrollment.js
-msgid "Financial Assistance"
-msgstr ""
-
-#: lms/djangoapps/support/static/support/js/views/enrollment.js
-msgid "Upset Learner"
-msgstr ""
-
-#: lms/djangoapps/support/static/support/js/views/enrollment.js
-msgid "Teaching Assistant"
-msgstr ""
-
-#: lms/djangoapps/support/static/support/js/views/enrollment_modal.js
-msgid "Please specify a reason."
-msgstr ""
-
-#: lms/djangoapps/support/static/support/js/views/enrollment_modal.js
-msgid "Something went wrong changing this enrollment. Please try again."
-msgstr ""
-
 #: lms/djangoapps/teams/static/teams/js/collections/team.js
 msgid "last activity"
 msgstr "Actividad reciente"
@@ -2530,11 +2460,6 @@ msgstr "nombre"
 #: lms/djangoapps/teams/static/teams/js/collections/topic.js
 msgid "team count"
 msgstr ""
-
-#: lms/djangoapps/teams/static/teams/js/teams_tab_factory.js
-#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
-msgid "Teams"
-msgstr "Equipos"
 
 #: lms/djangoapps/teams/static/teams/js/views/edit_team.js
 msgid "Create"
@@ -2665,8 +2590,8 @@ msgstr ""
 "discusiones del equipo."
 
 #: lms/djangoapps/teams/static/teams/js/views/instructor_tools.js
-msgid "Team \"{team}\" successfully deleted."
-msgstr ""
+msgid "Team \"%(team)s\" successfully deleted."
+msgstr "El estado del módulo se borró con éxito."
 
 #: lms/djangoapps/teams/static/teams/js/views/my_teams.js
 msgid "You are not currently a member of any team."
@@ -2729,13 +2654,13 @@ msgstr[1] ""
 msgid "All teams"
 msgstr "Todos los equipos"
 
-#: lms/djangoapps/teams/static/teams/js/views/teams.js
-msgid "Teams Pagination"
-msgstr ""
-
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid "Topics"
 msgstr "Temas"
+
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
+msgid "Teams"
+msgstr "Equipos"
 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid ""
@@ -2766,7 +2691,10 @@ msgstr ""
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid ""
 "Your request could not be completed due to a server problem. Reload the page"
+" and try again. If the issue persists, click the Help tab to report the "
+"problem."
 msgstr ""
+"Tu solicitud no puede ser realizada. Recarga la página e inténtalo de nuevo."
 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid "Team Search"
@@ -2900,7 +2828,6 @@ msgstr ""
 "nuevo."
 
 #: lms/static/coffee/src/instructor_dashboard/data_download.js
-#: lms/static/js/bookmarks/views/bookmarks_list.js
 #: lms/templates/search/search_loading.underscore
 #: lms/templates/student_account/account_settings.underscore
 msgid "Loading"
@@ -2924,10 +2851,6 @@ msgstr "Error al generar las calificaciones. Por favor, prueba de nuevo."
 
 #: lms/static/coffee/src/instructor_dashboard/data_download.js
 msgid "Error generating problem grade report. Please try again."
-msgstr ""
-
-#: lms/static/coffee/src/instructor_dashboard/data_download.js
-msgid "Error generating ORA data report. Please try again."
 msgstr ""
 
 #: lms/static/coffee/src/instructor_dashboard/membership.js
@@ -3527,76 +3450,18 @@ msgstr ""
 msgid "Insert Hyperlink"
 msgstr "Introduce hipervínculo"
 
-#: lms/static/js/Markdown.Editor.js
-msgid "e.g. 'http://google.com/'"
+#. Translators: Please keep the quotation marks (") around this text
+#: lms/static/js/Markdown.Editor.js lms/static/js/Markdown.Editor.js.c
+msgid "\"optional title\""
 msgstr ""
 
 #: lms/static/js/Markdown.Editor.js
-msgid "Link Description"
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid "e.g. 'google'"
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid "Please provide a description of the link destination."
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid "Insert Image (upload file or type URL)"
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid ""
-"Type in a URL or use the \"Choose File\" button to upload a file from your "
-"machine. (e.g. 'http://example.com/img/clouds.jpg')"
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid "Image Description"
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid ""
-"Please describe this image or agree that it has no contextual value by "
-"checking the checkbox."
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid ""
-"e.g. 'Sky with clouds'. The description is helpful for users who cannot see "
-"the image."
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid "How to create useful text alternatives."
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid ""
-"This image is for decorative purposes only and does not require a "
-"description."
+msgid "Insert Image (upload file or type url)"
 msgstr ""
 
 #: lms/static/js/Markdown.Editor.js
 msgid "Markdown Editing Help"
 msgstr "Ayuda en la edición del formato Markdown"
-
-#: lms/static/js/Markdown.Editor.js cms/templates/js/asset-library.underscore
-msgid "URL"
-msgstr ""
-
-#: lms/static/js/Markdown.Editor.js
-msgid "Please provide a valid URL."
-msgstr ""
-
-#. Translators: 'errorCount' is the number of errors found in the form.
-#: lms/static/js/Markdown.Editor.js
-msgid "%(errorCount)s error found in form."
-msgid_plural "%(errorCount)s errors found in form."
-msgstr[0] ""
-msgstr[1] ""
 
 #: lms/static/js/Markdown.Editor.js
 msgid "Bold (Ctrl+B)"
@@ -3659,6 +3524,10 @@ msgid "emphasized text"
 msgstr "texto enfatizado"
 
 #: lms/static/js/Markdown.Editor.js
+msgid "enter image description here"
+msgstr "introduce aquí la descripción del enlace"
+
+#: lms/static/js/Markdown.Editor.js
 msgid "enter link description here"
 msgstr "introduce aquí la descripción del enlace"
 
@@ -3677,24 +3546,6 @@ msgstr "Encabezamiento"
 #: lms/static/js/ajax-error.js
 msgid "You have been logged out of your edX account. "
 msgstr "Has sido desconectado de tu cuenta de edX."
-
-#: lms/static/js/api_admin/views/catalog_preview.js
-msgid "Preview this query"
-msgstr ""
-
-#: lms/static/js/bookmarks/views/bookmark_button.js
-#: lms/static/js/bookmarks/views/bookmarks_list.js
-#: lms/static/js/verify_student/views/make_payment_step_view.js
-msgid "An error has occurred. Please try again."
-msgstr "Se ha producido un error, por favor inténtalo de nuevo"
-
-#: lms/static/js/bookmarks/views/bookmark_button.js
-msgid "Click to add"
-msgstr ""
-
-#: lms/static/js/bookmarks/views/bookmark_button.js
-msgid "Click to remove"
-msgstr ""
 
 #: lms/static/js/ccx/schedule.js
 msgid "All subsections"
@@ -3734,7 +3585,6 @@ msgid "Enter Start Date and Time"
 msgstr "Introduce la fecha y hora de inicio"
 
 #: lms/static/js/certificates/models/certificate_exception.js
-#: lms/static/js/certificates/models/certificate_invalidation.js
 msgid "Student username/email field is required and can not be empty. "
 msgstr ""
 
@@ -3780,54 +3630,6 @@ msgstr ""
 
 #: lms/static/js/certificates/views/certificate_bulk_whitelist.js
 msgid " learner is not enrolled in course and not added to the exception"
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_invalidation_view.js
-msgid ""
-"Certificate of <%= user %> has already been invalidated. Please check your "
-"spelling and retry."
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_invalidation_view.js
-msgid "Certificate has been successfully invalidated for <%= user %>."
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_invalidation_view.js
-#: lms/static/js/certificates/views/certificate_whitelist.js
-#: lms/static/js/certificates/views/certificate_whitelist_editor.js
-msgid "Server Error, Please refresh the page and try again."
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_invalidation_view.js
-msgid ""
-"The certificate for this learner has been re-validated and the system is re-"
-"running the grade for this learner."
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_invalidation_view.js
-msgid ""
-"Could not find Certificate Invalidation in the list. Please refresh the page"
-" and try again"
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_whitelist.js
-msgid "Student Removed from certificate white list successfully."
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_whitelist.js
-msgid ""
-"Could not find Certificate Exception in white list. Please refresh the page "
-"and try again"
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_whitelist_editor.js
-msgid "<%= user %> already in exception list."
-msgstr ""
-
-#: lms/static/js/certificates/views/certificate_whitelist_editor.js
-msgid ""
-"<%= user %> has been successfully added to the exception list. Click "
-"Generate Exception Certificate below to send the certificate."
 msgstr ""
 
 #: lms/static/js/course_survey.js
@@ -4065,27 +3867,6 @@ msgstr ""
 msgid "Cohorts Disabled"
 msgstr ""
 
-#: lms/static/js/groups/views/verified_track_settings_notification.js
-msgid ""
-"This course uses automatic cohorting for verified track learners. You cannot"
-" disable cohorts, and you cannot rename the manual cohort named "
-"'{verifiedCohortName}'. To change the configuration for verified track "
-"cohorts, contact your edX partner manager."
-msgstr ""
-
-#: lms/static/js/groups/views/verified_track_settings_notification.js
-msgid ""
-"This course has automatic cohorting enabled for verified track learners, but"
-" the required cohort does not exist. You must create a manually-assigned "
-"cohort named '{verifiedCohortName}' for the feature to work."
-msgstr ""
-
-#: lms/static/js/groups/views/verified_track_settings_notification.js
-msgid ""
-"This course has automatic cohorting enabled for verified track learners, but"
-" cohorts are disabled. You must enable cohorts for the feature to work."
-msgstr ""
-
 #: lms/static/js/instructor_dashboard/certificates.js
 msgid "Allow students to generate certificates for this course?"
 msgstr "¿Permitir a los alumnos generar certificados de este curso?"
@@ -4237,11 +4018,11 @@ msgstr "Nombre completo"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid ""
-"The name that is used for ID verification and appears on your certificates. "
-"Other learners never see your full name. Make sure to enter your name "
-"exactly as it appears on your government-issued photo ID, including any non-"
-"Roman characters."
+"The name that appears on your certificates. Other learners never see your "
+"full name."
 msgstr ""
+"El nombre que aparece en tus certificados. Otros estudiantes nunca verán tu "
+"nombre completo"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Email Address"
@@ -4252,6 +4033,9 @@ msgid ""
 "The email address you use to sign in. Communications from {platform_name} "
 "and your courses are sent to this address."
 msgstr ""
+"La dirección de correo electrónico que usas para iniciar sesión Las "
+"comunicaciones de {platform_name} y tus cursos serán enviados a esta "
+"dirección"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 #: lms/templates/student_account/account.underscore
@@ -4281,6 +4065,8 @@ msgid ""
 "The language used throughout this site. This site is currently available in "
 "a limited number of languages."
 msgstr ""
+"El idioma usado en todo el sitio. Este sitio está actualmente disponible en "
+"un número limitado de idiomas."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Country or Region"
@@ -4354,10 +4140,6 @@ msgstr "Enlazando"
 msgid "Successfully unlinked."
 msgstr ""
 
-#: lms/static/js/student_profile/views/badge_list_container.js
-msgid "Accomplishments Pagination"
-msgstr ""
-
 #: lms/static/js/student_profile/views/learner_profile_factory.js
 msgid "{platform_name} learners can see my:"
 msgstr ""
@@ -4415,18 +4197,6 @@ msgstr "Imagen del perfil"
 msgid "Profile image for {username}"
 msgstr "Imagen del perfil de {username}"
 
-#: lms/static/js/student_profile/views/learner_profile_view.js
-msgid "About Me"
-msgstr ""
-
-#: lms/static/js/student_profile/views/learner_profile_view.js
-msgid "Accomplishments"
-msgstr ""
-
-#: lms/static/js/student_profile/views/learner_profile_view.js
-msgid "Profile"
-msgstr ""
-
 #: lms/static/js/verify_student/views/image_input_view.js
 msgid "Image Upload Error"
 msgstr "Error al subir la imagen"
@@ -4482,6 +4252,10 @@ msgstr ""
 #: lms/static/js/verify_student/views/make_payment_step_view.js
 msgid "Try the transaction again in a few minutes."
 msgstr ""
+
+#: lms/static/js/verify_student/views/make_payment_step_view.js
+msgid "An error has occurred. Please try again."
+msgstr "Se ha producido un error, por favor inténtalo de nuevo"
 
 #: lms/static/js/verify_student/views/make_payment_step_view.js
 msgid "Could not submit order"
@@ -5769,6 +5543,11 @@ msgstr ""
 #: lms/templates/instructor/instructor_dashboard_2/enrollment-code-lookup-links.underscore
 msgid "Actions"
 msgstr "Acciones"
+
+#: cms/templates/js/asset-upload-modal.underscore
+#: lms/templates/instructor/instructor_dashboard_2/certificate-bulk-white-list.underscore
+msgid "Choose File"
+msgstr ""
 
 #: cms/templates/js/course-outline.underscore
 #: cms/templates/js/publish-xblock.underscore
@@ -7992,6 +7771,10 @@ msgstr ""
 
 #: cms/templates/js/asset-library.underscore
 msgid "Other"
+msgstr ""
+
+#: cms/templates/js/asset-library.underscore
+msgid "URL"
 msgstr ""
 
 #: cms/templates/js/asset-library.underscore
